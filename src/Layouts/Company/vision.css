@@ -1,6 +1,6 @@
 .Imagen {
-  width: 100%; /* Aseguramos que la imagen nunca crezca más allá de su contenedor */
-  max-width: 40%; /* Limitar el tamaño máximo */
+ 
+  max-width: 40%;
   opacity: 0.7;
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease,
     filter 0.3s ease;
@@ -17,23 +17,22 @@
   display: flex;
   justify-content: center;
   text-align: justify;
-  align-items: center;
   flex-wrap: wrap;
-  padding: 40px;
+  padding: 60px;
   gap: 4rem;
   border-bottom: 1px dotted #b0b0b0;
+  align-items: center;
 }
 
 .mision {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 50%; /* Limita el tamaño en pantallas más grandes */
+  max-width: 50%; 
   gap: 1rem;
 }
 
 p {
-  font-size: clamp(16px, 2.5vw, 19px); /* Ajuste responsivo del texto */
+  font-size: 17px
 }
 
 p,
@@ -58,9 +57,11 @@ h1 {
   p {
     font-size: 16px; /* Aseguramos un tamaño de fuente más pequeño en pantallas pequeñas */
   }
+  
 }
 h1{
   text-align: center;
+  font-size: 24px;
 }
 
 
