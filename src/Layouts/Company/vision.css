@@ -16,13 +16,13 @@
 .countero {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   
 
   text-align: justify;
   gap: 6rem;
   padding: 4rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
  
  
 
