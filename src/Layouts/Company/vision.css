@@ -1,0 +1,61 @@
+
+.Imagen {
+  max-width: 42%;
+  opacity: 0.7;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease,
+    filter 0.3s ease; /* Aplicar transición a todos los cambios de estado */
+}
+
+.Imagen:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(161, 103, 165, 0.6);
+  opacity: 1;
+  filter: brightness(120%);
+}
+
+.countero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  text-align: justify;
+  gap: 6rem;
+  padding: 4rem;
+  flex-wrap: wrap;
+ 
+ 
+
+
+  
+  
+ 
+  border-bottom: 1px dotted #b0b0b0;
+  padding-bottom: 50px;
+  
+  
+ 
+}
+h1 {
+  text-align: center;
+}
+.mision {
+  display: flex;
+  flex-direction: column;
+  
+
+  gap: 0.8rem;
+  max-width: 40%;
+  
+  
+}
+p {
+  font-size: 19px;
+}
+p,
+h1 {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
