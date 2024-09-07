@@ -1,6 +1,6 @@
 
 .Imagen {
-  max-width: 42%;
+  max-width: 400px;
   opacity: 0.7;
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease,
     filter 0.3s ease; /* Aplicar transición a todos los cambios de estado */
@@ -15,7 +15,7 @@
 
 .countero {
   display: flex;
-  align-items: center;
+ 
   justify-content: space-evenly;
   
 
