@@ -1,9 +1,9 @@
 .Imagen {
-  max-width: 30rem;
+  width: 100%; /* Aseguramos que la imagen nunca crezca más allá de su contenedor */
+  max-width: 40%; /* Limitar el tamaño máximo */
   opacity: 0.7;
   transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease,
-    filter 0.3s ease; /* Aplicar transición a todos los cambios de estado */
-    
+    filter 0.3s ease;
 }
 
 .Imagen:hover {
@@ -15,25 +15,26 @@
 
 .countero {
   display: flex;
-  text-align: justify;
   justify-content: center;
+  text-align: justify;
+  align-items: center;
   flex-wrap: wrap;
-  padding: 20px;
-  gap: 2rem;
+  padding: 40px;
+  gap: 4rem;
   border-bottom: 1px dotted #b0b0b0;
-  
-  
 }
 
 .mision {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 50%; /* Limita el tamaño en pantallas más grandes */
+}
 
-  max-width: 45rem;
-}
 p {
-  font-size: 19px;
+  font-size: clamp(16px, 2.5vw, 19px); /* Ajuste responsivo del texto */
 }
+
 p,
 h1 {
   font-family: "Nunito", sans-serif;
@@ -42,4 +43,18 @@ h1 {
   font-weight: 400;
 }
 
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .Imagen {
+    max-width: 100%; /* Ajustamos las imágenes al 100% en pantallas pequeñas */
+  }
+
+  .mision {
+    max-width: 100%; /* Elimina la restricción de ancho en pantallas pequeñas */
+  }
+
+  p {
+    font-size: 16px; /* Aseguramos un tamaño de fuente más pequeño en pantallas pequeñas */
+  }
+}
 
